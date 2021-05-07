@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Odoo</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/worker.css">
+<style>
+
+</style>
+<body>
+<div class="pos" id="content"></div>
+
+
+<script>
+    const ipcRenderer = require("electron").ipcRenderer;
+    ipcRenderer.on("printPDF", (event, content) => {
+        document.getElementById('content').innerHTML = content.html;
+        ipcRenderer.send("readyToPrintPDF",content.printer);
+    });
+</script>
+</body>
+</html>

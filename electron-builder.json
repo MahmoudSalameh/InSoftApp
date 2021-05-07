@@ -1,0 +1,27 @@
+{
+  "appId": "com.Odoo.InSoftOnline",
+  "productName": "InSoft Online App",
+  "copyright": "InSoftOnline",
+  "directories": {
+    "app": ".",
+    "output": "out",
+    "buildResources": "build-res"
+  },
+  "files": [
+    "package.json",
+    "app/**/*",
+    "node_modules"
+  ],
+  "win": {
+    "target": "nsis",
+    "publish": [
+      {
+        "provider": "github",
+        "private": true,
+        "owner": "MahmoudSalameh",
+        "repo": "https://github.com/MahmoudSalameh/InSoftApp",
+        "token": "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"
+      }
+    ]
+  }
+}

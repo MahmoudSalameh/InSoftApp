@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.myNav{
+    height: 50px;
+}
+
+.icon{
+    transition: .3s ease-in-out;
+}
+.icon:hover{
+    color:#646464;
+}
+#PoweroffButton:hover{
+    color: #e73b3b;
+}
+.bg-primary-bold{
+    background-color: #20589b;;
+}
+.b-radius-20{
+    border-radius: 15px;
+}
+.max-h-160{
+ max-height: 160px !important;
+}
+.min-w-100{
+    min-width:100% !important;
+
+}

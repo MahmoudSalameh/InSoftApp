@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  <div class="myNav bg-primary">
+      <div class="row">
+          <div class="col-sm-4">
+              <div class="nav-button-box d-md-flex text-white fa fa-2x p-2">
+                  <div class="box">
+                      <i id="SaveButton" class="ml-lg-5 ml-sm-4 fa fa-save icon"></i>
+                  </div>
+                  <div class="box">
+                      <i id="StatusIcon" class="ml-lg-5 ml-sm-4 fa fa-wifi icon"></i>
+                  </div>
+              </div>
+
+          </div>
+          <div class="col-sm-4">
+              <div class="nav-button-box d-md-flex justify-content-center text-white fa fa-2x p-2">
+                  <div class="box">
+                      <i id="DetectButton" class="fa fa-desktop icon"></i>
+                  </div>
+                  <div class="box">
+                      <i id="ReloadButton" class="ml-lg-5 ml-sm-4 fa fa-reply icon"></i>
+                  </div>
+                  <div class="box">
+                      <i id="FullScreenButton" class="ml-lg-5 ml-sm-4 fa fa-expand icon"></i>
+                  </div>
+              </div>
+
+          </div>
+          <div class="col-sm-4">
+              <div class="nav-button-box d-md-flex justify-content-end text-white fa fa-2x p-2">
+                  <div class="box">
+                      <button id="FeedbackButton" class="btn btn-outline-light">Feedback</button>
+                  </div>
+                  <div class="box">
+                      <button id="CheckUpdateButton" class="ml-lg-5 ml-sm-4 btn btn-outline-light">Check Update</button>
+                  </div>
+                  <div class="box">
+                      <i id="ShutdownButton" class="ml-lg-5 ml-sm-4 fa fa-power-off icon"></i>
+                  </div>
+
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+    <!-- You can also require other files to run in this process -->
+<!--   <script src="scripts/jquery.js"></script>-->
+   <script src="renderer.js"></script>
+   <!-- Renderer process logic -->
+   <!--   <script src="index.js"></script>-->
+  </body>
+</html>

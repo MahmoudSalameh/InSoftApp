@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.myNav{
+  height: 50px;
+}
+
+.icon{
+  transition: .3s ease-in-out;
+}
+.icon:hover{
+  color:#646464;
+}
+
+#ShutdownButton:hover{
+  color: #e73b3b;
+}

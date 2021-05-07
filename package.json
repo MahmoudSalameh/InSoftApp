@@ -1,0 +1,55 @@
+{
+  "build": {
+    "appId": "com.Odoo.InSoftOnline",
+    "win": {
+      "publish": [
+        {
+          "provider": "github",
+          "private": true,
+          "owner": "MahmoudSalameh",
+          "repo": "InSoftApp",
+          "token": "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"
+        }
+      ],
+      "target": "nsis",
+      "icon": "assets/icons/win/icon.ico"
+    }
+  },
+  "name": "InSoftApp",
+  "version": "1.0.8",
+  "description": "InSoftOnline Application To Management Kassee System",
+  "main": "main.js",
+  "scripts": {
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "start": "electron .",
+    "build": "electron-builder build  --win --publish never",
+    "deploy": "electron-builder build  --win --publish always"
+  },
+
+  "repository": "https://github.com/MahmoudSalameh/InSoftApp.git",
+
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "InSoftOnline",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "electron": "^12.0.5",
+    "electron-winstaller": "^5.0.0",
+    "electron-wix-msi": "^3.2.0",
+    "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "electron-json-storage": "^4.5.0",
+    "electron-log": "^4.3.5",
+    "electron-updater": "^4.3.8",
+    "update-electron-app": "^2.0.1"
+  }
+}
